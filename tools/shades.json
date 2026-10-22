@@ -1,0 +1,28 @@
+{
+  "contact_line": "For any query, please connect:",
+  "contact_phone": "63644 44120",
+  "studio": "Lignex Woodfinishing Studio",
+  "features": "Water-based  ·  Low odour  ·  Fast drying  ·  200+ shades",
+  "shades": [
+    {"name": "Simply White",   "color": "#EFE9DD", "best": ["Pine", "Teak", "Oak"],        "look": "Soft, bright and Scandinavian. Reduces yellow undertones.",             "seen": ["bookshelf", "bench", "door"]},
+    {"name": "Pickled Oak",    "color": "#D9C7A6", "best": ["Oak", "Ash", "Teak"],        "look": "Pale, coastal, whitewashed effect.",                                    "seen": ["table", "chair", "bookshelf"]},
+    {"name": "Natural",        "color": "#CFA26B", "best": ["Teak", "Maple", "Birch"],    "look": "Clean and raw. Enhances the wood's original tone.",                      "seen": ["table", "chair", "door"]},
+    {"name": "Golden Oak",     "color": "#BF8433", "best": ["Teak", "Oak", "Pine"],       "look": "Warm honey-gold, traditional and inviting.",                             "seen": ["table", "wardrobe", "chair"]},
+    {"name": "Honey Maple",    "color": "#D1A055", "best": ["Maple", "Birch", "Teak"],    "look": "Light amber with a smooth, modern finish.",                              "seen": ["bookshelf", "bench", "chair"]},
+    {"name": "Fruitwood",      "color": "#A5703F", "best": ["Pine", "Poplar", "Teak"],    "look": "Warm mid-brown with a rustic, vintage feel.",                            "seen": ["wardrobe", "table", "bench"]},
+    {"name": "Early American", "color": "#8A5A33", "best": ["Oak", "Pine", "Teak"],       "look": "Classic warm brown. Suits farmhouse and antique furniture.",             "seen": ["table", "bench", "wardrobe"]},
+    {"name": "Provincial",     "color": "#7A4326", "best": ["Oak", "Teak", "Ash"],        "look": "Medium reddish-brown, rich and traditional.",                            "seen": ["wardrobe", "door", "table"]},
+    {"name": "Special Walnut", "color": "#6B4A30", "best": ["Teak", "Oak", "Walnut"],     "look": "Warm medium brown. Timeless for tables and cabinets.",                   "seen": ["table", "wardrobe", "bookshelf"]},
+    {"name": "Walnut",         "color": "#5A3E2B", "best": ["Teak", "Oak", "Birch"],      "look": "Deep, elegant brown that highlights the grain.",                         "seen": ["door", "wardrobe", "table"]},
+    {"name": "Dark Walnut",    "color": "#43301F", "best": ["Teak", "Oak", "Walnut"],     "look": "Luxurious dark brown. Ideal for statement furniture.",                   "seen": ["table", "door", "chair"]},
+    {"name": "Jacobean",       "color": "#33241A", "best": ["Oak", "Teak", "Ash"],        "look": "Very dark brown-black. Bold, contemporary, high-contrast grain.",        "seen": ["door", "bookshelf", "chair"]},
+    {"name": "Ebony",          "color": "#231B17", "best": ["Oak", "Teak", "Maple"],      "look": "Near-black, dramatic, modern and premium.",                              "seen": ["table", "chair", "wardrobe"]},
+    {"name": "True Black",     "color": "#151515", "best": ["Teak", "Oak", "Poplar"],     "look": "Solid black with the wood texture still visible.",                       "seen": ["chair", "bookshelf", "door"]},
+    {"name": "Classic Gray",   "color": "#8E8B86", "best": ["Oak", "Teak", "Pine"],       "look": "Cool, minimal, urban-loft style.",                                       "seen": ["bookshelf", "bench", "table"]},
+    {"name": "Charcoal Gray",  "color": "#4C4F52", "best": ["Oak", "Teak", "Walnut"],     "look": "Deep smoky gray. Pairs well with black hardware.",                       "seen": ["door", "wardrobe", "chair"]},
+    {"name": "Weathered Oak",  "color": "#A09585", "best": ["Pine", "Teak", "Oak"],       "look": "Soft gray-brown, aged coastal look. Mutes yellow and orange tones.",     "seen": ["table", "bench", "door"]},
+    {"name": "Driftwood",      "color": "#B3A89A", "best": ["Teak", "Pine", "Oak"],       "look": "Gray-beige, beach-house and reclaimed-wood feel.",                       "seen": ["bench", "bookshelf", "chair"]},
+    {"name": "Sedona Red",     "color": "#9C4A33", "best": ["Oak", "Teak", "Pine"],       "look": "Warm red-brown. Rustic and eye-catching.",                               "seen": ["chair", "bench", "door"]},
+    {"name": "Marine Blue",    "color": "#1F3A5C", "best": ["Teak", "Oak", "Poplar"],     "look": "Bold navy-blue statement finish for modern furniture or accent pieces.", "seen": ["bookshelf", "chair", "wardrobe"]}
+  ]
+}
