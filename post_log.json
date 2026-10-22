@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2026-10-22T17:16:06.278464+00:00",
+    "post_id": "stain-01",
+    "topic": "Simply White water-based wood stain",
+    "caption": "Simply White water-based wood stain (1/20)\n\nSoft, bright and Scandinavian. Reduces yellow undertones.\nBest on: Pine, Teak, Oak.\n\nWater-based, low odour, fast drying.\n\nFor any query, please connect: 63644 44120\nLignex Woodfinishing Studio\n\n#WoodStain #WaterBasedStain #WoodFinishing #FurnitureFinish #WoodenFurniture #InteriorDesign #LignexWoodfinishingStudio",
+    "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/posters/01-simply-white.jpg",
+    "status": "failed",
+    "error": "Container creation failed: {'error': {'message': 'Failed to decode', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AIazBMf339BuJXZGNX_WIAS'}}"
+  }
+]
