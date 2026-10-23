@@ -7,5 +7,14 @@
     "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/posters/01-simply-white.jpg",
     "status": "failed",
     "error": "Container creation failed: {'error': {'message': 'Failed to decode', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AIazBMf339BuJXZGNX_WIAS'}}"
+  },
+  {
+    "timestamp": "2026-10-23T01:53:51.350385+00:00",
+    "post_id": "stain-02",
+    "topic": "Pickled Oak water-based wood stain",
+    "caption": "Pickled Oak water-based wood stain (2/20)\n\nPale, coastal, whitewashed effect.\nBest on: Oak, Ash, Teak.\n\nWater-based, low odour, fast drying.\n\nFor any query, please connect: 63644 44120\nLignex Woodfinishing Studio\n\n#WoodStain #WaterBasedStain #WoodFinishing #FurnitureFinish #WoodenFurniture #InteriorDesign #LignexWoodfinishingStudio",
+    "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/posters/02-pickled-oak.jpg",
+    "status": "published",
+    "media_id": "18288793366293127"
   }
 ]
