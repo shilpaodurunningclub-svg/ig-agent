@@ -3,7 +3,7 @@ name: Daily Instagram Post
 on:
   schedule:
     # 13:30 UTC = 19:00 (7:00 PM) India time. GitHub can start scheduled runs a few minutes late.
-    - cron: "30 13 * * *"
+   - cron: "30 13 * * 2,4"
   workflow_dispatch: {}  # lets you run it by hand from the Actions tab
 
 permissions:
