@@ -1,6 +1,7 @@
 """
 Posts the next pending item from posts_queue.json to Instagram.
 
+An entry with "image_urls" (2-10 images) is posted as a swipe carousel; otherwise "image_url" is a single image.
 If the entry has a "caption" it is used as written (no AI call). Otherwise a
 caption is generated from the topic with generate_content.py.
 
@@ -18,7 +19,7 @@ import os
 import sys
 from datetime import datetime, timezone
 
-from publish_instagram import post_to_instagram, InstagramPublishError
+from publish_instagram import post_to_instagram, post_carousel_to_instagram, InstagramPublishError
 from queue_manager import get_next_pending, update_status, QueueEmptyError
 
 LOG_FILE = "post_log.json"
@@ -38,7 +39,7 @@ def log_post(entry: dict) -> None:
         f.write("\n")
 
 
-def run(topic, image_url, caption=None, require_approval=True, post_id=None) -> bool:
+def run(topic, image_url, caption=None, require_approval=True, post_id=None, image_urls=None) -> bool:
     if not caption:
         from generate_content import generate_caption  # only needed when no caption is saved
         print(f"Generating caption for topic: {topic}")
@@ -46,13 +47,18 @@ def run(topic, image_url, caption=None, require_approval=True, post_id=None) -> 
 
     print("\n--- Caption ---")
     print(caption)
-    print(f"Image: {image_url}")
+    if image_urls:
+        print(f"Carousel of {len(image_urls)} images, first: {image_urls[0]}")
+    else:
+        print(f"Image: {image_url}")
     print("---------------\n")
 
     base = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "post_id": post_id, "topic": topic, "caption": caption, "image_url": image_url,
     }
+    if image_urls:
+        base["image_urls"] = image_urls
 
     if require_approval:
         if input("Publish this post? [y/N]: ").strip().lower() != "y":
@@ -63,7 +69,10 @@ def run(topic, image_url, caption=None, require_approval=True, post_id=None) -> 
             return True
 
     try:
-        media_id = post_to_instagram(image_url, caption)
+        if image_urls:
+            media_id = post_carousel_to_instagram(image_urls, caption)
+        else:
+            media_id = post_to_instagram(image_url, caption)
     except InstagramPublishError as e:
         print(f"Failed to publish: {e}")
         log_post({**base, "status": "failed", "error": str(e)})
@@ -92,8 +101,9 @@ if __name__ == "__main__":
         except QueueEmptyError as e:
             print(e)
             sys.exit(0)
-        ok = run(entry.get("topic", ""), entry["image_url"], entry.get("caption"),
-                 require_approval=not args.no_approval, post_id=entry["id"])
+        urls = entry.get("image_urls")
+        ok = run(entry.get("topic", ""), (urls[0] if urls else entry["image_url"]), entry.get("caption"),
+                 require_approval=not args.no_approval, post_id=entry["id"], image_urls=urls)
     else:
         if not args.topic or not args.image_url:
             parser.error("--topic and --image-url are required unless using --from-queue")

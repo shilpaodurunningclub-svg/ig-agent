@@ -1,7 +1,7 @@
 """
 Simple JSON content queue (posts_queue.json).
 
-Entry: {"id", "topic", "caption" (optional), "image_url", "status"}
+Entry: {"id", "topic", "caption" (optional), "image_url", "image_urls" (optional, 2-10 = carousel), "status"}
 status is "pending" | "posted" | "failed" | "skipped". The agent always takes
 the first "pending" entry, so posts go out in file order, one per run.
 """

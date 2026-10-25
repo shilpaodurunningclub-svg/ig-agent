@@ -1,10 +1,15 @@
 """
-Publishes an image post to Instagram through the Instagram API.
+Publishes an image post, or a swipe carousel of 2-10 images, to Instagram.
 
-Flow (required by Instagram):
+Single image (required by Instagram):
   1. Create a media container (POST image_url + caption)
   2. Poll the container until its status is FINISHED
   3. Publish the container (POST creation_id)
+
+Carousel:
+  1. Create one container per slide (image_url + is_carousel_item=true) and wait for each
+  2. Create a CAROUSEL container (children=id1,id2,... + caption) and wait for it
+  3. Publish the carousel container
 
 The token created under "Instagram API setup" in the Meta developer dashboard
 is an Instagram User access token, which is used with graph.instagram.com.
@@ -55,6 +60,28 @@ def create_media_container(image_url: str, caption: str) -> str:
     return data["id"]
 
 
+def create_carousel_item(image_url: str) -> str:
+    """One slide of a carousel (no caption; the caption goes on the carousel itself)."""
+    data = _post(
+        f"{BASE_URL}/{IG_USER_ID}/media",
+        {"image_url": image_url, "is_carousel_item": "true", "access_token": IG_ACCESS_TOKEN},
+    )
+    if "id" not in data:
+        raise InstagramPublishError(f"Carousel slide creation failed for {image_url}: {data}")
+    return data["id"]
+
+
+def create_carousel_container(child_ids: list, caption: str) -> str:
+    data = _post(
+        f"{BASE_URL}/{IG_USER_ID}/media",
+        {"media_type": "CAROUSEL", "children": ",".join(child_ids),
+         "caption": caption, "access_token": IG_ACCESS_TOKEN},
+    )
+    if "id" not in data:
+        raise InstagramPublishError(f"Carousel container creation failed: {data}")
+    return data["id"]
+
+
 def wait_until_ready(creation_id: str, max_attempts: int = 20, delay_seconds: int = 5) -> None:
     url = f"{BASE_URL}/{creation_id}"
     params = {"fields": "status_code", "access_token": IG_ACCESS_TOKEN}
@@ -83,6 +110,21 @@ def post_to_instagram(image_url: str, caption: str) -> str:
     if not IG_ACCESS_TOKEN or not IG_USER_ID:
         raise InstagramPublishError("Missing IG_ACCESS_TOKEN or IG_USER_ID.")
     creation_id = create_media_container(image_url, caption)
+    wait_until_ready(creation_id)
+    return publish_container(creation_id)
+
+
+def post_carousel_to_instagram(image_urls: list, caption: str) -> str:
+    if not IG_ACCESS_TOKEN or not IG_USER_ID:
+        raise InstagramPublishError("Missing IG_ACCESS_TOKEN or IG_USER_ID.")
+    if not 2 <= len(image_urls) <= 10:
+        raise InstagramPublishError(f"A carousel needs 2 to 10 images, got {len(image_urls)}.")
+    child_ids = []
+    for url in image_urls:
+        child = create_carousel_item(url)
+        wait_until_ready(child)
+        child_ids.append(child)
+    creation_id = create_carousel_container(child_ids, caption)
     wait_until_ready(creation_id)
     return publish_container(creation_id)
 
