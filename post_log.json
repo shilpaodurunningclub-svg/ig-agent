@@ -33,5 +33,14 @@
     ],
     "status": "published",
     "media_id": "18103914347573087"
+  },
+  {
+    "timestamp": "2026-10-26T19:26:46.785622+00:00",
+    "post_id": "stain-01",
+    "topic": "Simply White water-based wood stain",
+    "caption": "Simply White (1/20): a soft, bright and Scandinavian look that reduces yellow undertones.\n\nBest on Pine, Teak and Oak.\nSeen on bookshelves, benches and doors.\n\nWant a bright, Scandinavian look? Call us on 63644 44120.\nLignex Woodfinishing Studio\n\n#WoodStainColors #StainShades #WoodColor #WoodShades #WaterBasedWoodStain #BangaloreInteriorDesigner #BangaloreHomes #InteriorsBangalore #BengaluruInteriors #BangaloreArchitects #WoodGrain #TeakWood #OakFinish #WalnutFinish #StainedWood #FurnitureDesign #DesignerFurniture #WoodenDoors #WardrobeDesign #LignexWoodfinishingStudio",
+    "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/posters/01-simply-white.jpg",
+    "status": "failed",
+    "error": "Container creation failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'AtCprNhaf15-JByeaGcn0M4'}}"
   }
 ]
