@@ -42,5 +42,21 @@
     "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/posters/01-simply-white.jpg",
     "status": "failed",
     "error": "Container creation failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'AtCprNhaf15-JByeaGcn0M4'}}"
+  },
+  {
+    "timestamp": "2026-10-27T15:50:03.485073+00:00",
+    "post_id": "guide-wood-teak-oak-pine",
+    "topic": "Guide: shades for teak, oak and pine",
+    "caption": "Which stain shade for teak, oak or pine? Swipe for shades that work well on each. Teak takes rich browns beautifully, oak runs from pale and coastal to traditional, and pine does best with conditioner first. Always test on an offcut of your own wood. Want help choosing? Call us on 63644 44120.\n\nLignex Woodfinishing Studio\n\n#ShadeGuide #WoodStainGuide #WoodStainColors #WoodShades #StainShades #BangaloreInteriors #BangaloreCarpenter #BengaluruDesign #BangaloreFurniture #PeenyaIndustrialArea #WoodGrain #TeakWood #OakFinish #WalnutFinish #StainedWood #FurnitureDesign #DesignerFurniture #WoodenDoors #WardrobeDesign #LignexWoodfinishingStudio",
+    "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-1.jpg",
+    "image_urls": [
+      "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-1.jpg",
+      "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-2.jpg",
+      "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-3.jpg",
+      "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-4.jpg",
+      "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/guide-wood-teak-oak-pine/guide-wood-teak-oak-pine-slide-5.jpg"
+    ],
+    "status": "published",
+    "media_id": "18079670201532367"
   }
 ]
