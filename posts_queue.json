@@ -285,7 +285,7 @@
     "id": "tip-stain-is-not-protection",
     "topic": "Tip: stain is colour, not protection",
     "caption": "A stain gives the wood its colour, but it does not protect it. For tables, doors and anything that gets touched, seal it with a compatible clear topcoat, and sand lightly between coats as the product label says. Colour first, protection second. Not sure which topcoat goes with your stain? Call us on 63644 44120.\n\nLignex Woodfinishing Studio\n\n#CarpenterTips #CarpentryTips #WoodFinishingTips #WoodworkingTips #FinishingTips #BangaloreInteriors #BangaloreCarpenter #BengaluruDesign #BangaloreFurniture #PeenyaIndustrialArea #WoodCoating #WoodPolish #WoodenFurniture #CustomFurniture #WoodenInteriors #InteriorDesign #InteriorDesignIndia #HomeInteriors #IndianInteriors #LignexWoodfinishingStudio",
-    "status": "pending",
+    "status": "failed",
     "image_urls": [
       "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/tip-stain-is-not-protection/tip-stain-is-not-protection-slide-1.jpg",
       "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/tip-stain-is-not-protection/tip-stain-is-not-protection-slide-2.jpg",
@@ -295,7 +295,9 @@
       "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/tip-stain-is-not-protection/tip-stain-is-not-protection-slide-6.jpg"
     ],
     "image_url": "https://raw.githubusercontent.com/shilpaodurunningclub-svg/ig-agent/main/carousels/tip-stain-is-not-protection/tip-stain-is-not-protection-slide-1.jpg",
-    "planned_date": "2026-11-13"
+    "planned_date": "2026-11-13",
+    "updated_at": "2026-11-11T20:17:31.609222+00:00",
+    "error": "Publish failed: {'error': {'message': 'Media ID is not available', 'type': 'OAuthException', 'code': 9007, 'error_subcode': 2207027, 'is_transient': False, 'error_user_title': 'Cannot Publish', 'error_user_msg': 'The media is not ready for publishing, please wait for a moment', 'fbtrace_id': 'A3GVF4MvB3RHxQFNX53rlGo'}}"
   },
   {
     "id": "guide-light-vs-dark",
